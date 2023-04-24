@@ -1,12 +1,18 @@
 class Customer:
 
-    def __init__(self,name):
+    def __init__(self,name,gender):
         self.name=name
+        self.gender=gender
 
 def greet(customer):
-    print("Hello", customer.name)
+    if(customer.gender=='Male'):
+        print("Hello", customer.name,'Sir')
+    else:
+        print("Hello", customer.name,'Mam')
 
 
-cust = Customer('Nitish')
+n = input("Hi, Please enter your name")
+g = input("Please enter your gender(Male/Female)")
+cust = Customer(n,g)
 greet(cust)
 print(cust.name)
