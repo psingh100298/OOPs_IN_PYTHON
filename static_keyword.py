@@ -1,8 +1,14 @@
 class Atm:
+    #static/class variable
+    counter =0
     def __init__(self):
+
+        #instance variables
         self.__pin=''
         self.__balance=0
-        self.menu()
+        self.sno = Atm.counter
+        Atm.counter = Atm.counter+1
+        # self.menu()
 
     def get_pin(self):
         return self.__pin
