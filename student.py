@@ -18,5 +18,8 @@ class Student:
 student_one = Student('Rolf',[70,80,90,100])
 student_two = Student('Jose',[50,60,70,80])
 
-print(student_one.name)
-print(student_two.name)
+print(student_one.name,end=" ")
+print(student_one.average())
+print(student_two.name,end=" ")
+
+print(student_two.average())
